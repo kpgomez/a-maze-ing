@@ -1,0 +1,281 @@
+{
+  "intro": {
+    "location": "intro",
+    "mixin": "TransitMixin",
+    "message_pitch": "",
+    "message_prompt": "Hello! Welcome to A-MAZE-ING!\nWe make the mazes and solve them so you don't have too! ;)\nWhat would you like to do?",
+    "locations": {
+      "main": "",
+      "quitting": ""
+    },
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "previous_location": "",
+    "next_location": "main",
+    "parameters": {}
+  },
+  "main": {
+    "location": "main",
+    "mixin": "TransitMixin",
+    "message_pitch": "Main Menu",
+    "message_prompt": "What would you like to do?",
+    "locations": {
+      "create_maze": "",
+      "load_maze": "",
+      "solve_maze": "",
+      "view_maze": "",
+      "save_maze": "",
+      "save_image": "",
+      "delete": "",
+      "quitting": ""
+    },
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "previous_location": "",
+    "next_location": "",
+    "parameters": {}
+  },
+  "quitting": {
+    "location": "quitting",
+    "mixin": "QuittingMixin",
+    "message_pitch": "Leave A-MAZE-ING",
+    "message_prompt": "Are you sure?",
+    "locations": {
+      "main": "",
+      "save_maze": "",
+      "good_bye": ""
+    },
+    "previous_location": "main",
+    "next_location": "good_bye",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {
+      "Last chance to return to main": {"value": "main"},
+      "Ready to leave": {"value": "good_bye"}}
+  },
+  "create_maze": {
+    "location": "create_maze",
+    "mixin": "CreateMazeMixin",
+    "message_pitch": "Create Maze",
+    "message_prompt": "None",
+    "locations": {
+      "main": "",
+      "save_maze": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "save_maze",
+    "value": {
+      "module": "src.generate.create_maze",
+      "callable": "create_maze"
+    },
+    "parameters": {
+      "Choose a Width(3-50 squares)": {
+        "kwarg": "dim_col",
+        "type": "int",
+        "value": {
+          "lower": "3",
+          "upper": "50",
+          "increment": "1"
+        }
+      },
+      "Choose a Height(3-50 squares)": {
+        "kwarg": "dim_row",
+        "type": "int",
+        "value": {
+          "lower": "3",
+          "upper": "50",
+          "increment": "1"
+        }
+      },
+      "Choose a Algorithm": {
+        "kwarg": "generator",
+        "type": "dict",
+        "value": {
+          "Aldous-Broder Algorithm": {
+            "module": "mazelib.generate.AldousBroder",
+            "callable": "AldousBroder"
+          },
+          "Binary Tree Algorithm": {
+            "module": "mazelib.generate.BinaryTree",
+            "callable": "BinaryTree"
+          },
+          "Cellular Automaton Algorithm": {
+            "module": "mazelib.generate.CellularAutomaton",
+            "callable": "CellularAutomaton"
+          },
+          "Dungeon-Room Algorithm": {
+            "module": "mazelib.generate.DungeonRooms",
+            "callable": "DungeonRooms"
+          },
+          "Eller's Algorithm": {
+            "module": "mazelib.generate.Ellers",
+            "callable": "Ellers"
+          },
+          "Growing Tree Algorithm": {
+            "module": "mazelib.generate.GrowingTree",
+            "callable": "GrowingTree"
+          },
+          "Hunt-and-Kill Algorithm": {
+            "module": "mazelib.generate.HuntAndKill",
+            "callable": "HuntAndKill"
+          },
+          "Kruskal's Algorithm": {
+            "module": "mazelib.generate.Kruskal",
+            "callable": "Kruskal"
+          },
+          "Prim's Algorithm": {
+            "module": "mazelib.generate.Prims",
+            "callable": "Prims"
+          },
+          "Recursive Backtracking Algorithm": {
+            "module": "mazelib.generate.BacktrackingGenerator",
+            "callable": "BacktrackingGenerator"
+          },
+          "Recursive Division Algorithm": {
+            "module": "mazelib.generate.Division",
+            "callable": "Division"
+          },
+          "Sidewinder Algorithm": {
+            "module": "mazelib.generate.Sidewinder",
+            "callable": "Sidewinder"
+          },
+          "Wilson's Algorithm": {
+            "module": "mazelib.generate.Wilsons",
+            "callable": "Wilsons"
+          }
+        }
+      }
+    }
+  },
+  "solve_maze": {
+    "location": "solve_maze",
+    "mixin": "SolveMazeMixin",
+    "message_pitch": "Solve Maze",
+    "message_prompt": "None",
+    "locations": {
+      "main": "",
+      "save_maze": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "save_maze",
+    "value": {
+      "module": "src.solve.solver",
+      "callable": "solve"
+    },
+    "parameters": {}
+  },
+  "good_bye": {
+    "location": "good_bye",
+    "mixin": "GoodByeMixin",
+    "message_pitch": "The application is closing now.\nThank you for playing, building, and solving, mazes with us!\nSee you soon. :)",
+    "message_prompt": "None",
+    "locations": {
+    },
+    "previous_location": "main",
+    "next_location": "",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {}
+  },
+  "save_maze": {
+    "location": "save_maze",
+    "mixin": "SaveMazeMixin",
+    "message_pitch": "Save Maze",
+    "message_prompt": "Input a file name for the maze.",
+    "locations": {
+      "main": "",
+      "create_maze": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "main",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {}
+  },
+  "load_maze": {
+    "location": "load_maze",
+    "mixin": "LoadMazeMixin",
+    "message_pitch": "Upload Maze",
+    "message_prompt": "What file would you like to upload?",
+    "locations": {
+      "main": "",
+      "create_maze": "",
+      "save_maze": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "main",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {}
+  },
+  "view_maze": {
+    "location": "view_maze",
+    "mixin": "ViewMazeMixin",
+    "message_pitch": "View Maze",
+    "message_prompt": "",
+    "locations": {
+      "main": "",
+      "save_maze": "",
+      "save_image": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "save_image",
+    "value": {
+      "module": "src.view.renderer",
+      "callable": "SVGRenderer"
+    },
+    "parameters": {}
+  },
+  "save_image": {
+    "location": "save_image",
+    "mixin": "SaveImageMixin",
+    "message_pitch": "Save Image",
+    "message_prompt": "Input a file name for the image.",
+    "locations": {
+      "main": "",
+      "save_maze": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "main",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {}
+  },
+  "delete": {
+    "location": "delete",
+    "mixin": "DeleteMixin",
+    "message_pitch": "Delete Maze, Solution, or Image",
+    "message_prompt": "",
+    "locations": {
+      "main": "",
+      "quitting": ""
+    },
+    "previous_location": "main",
+    "next_location": "main",
+    "value": {
+      "module": "",
+      "callable": ""
+    },
+    "parameters": {}
+  }
+}

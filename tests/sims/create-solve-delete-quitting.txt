@@ -1,0 +1,824 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Intro
+
+Hello! Welcome to A-MAZE-ING!
+We make the mazes and solve them so you don't have too! ;)
+What would you like to do?
+[1] Main Menu
+[2] Leave A-MAZE-ING
+Choose by number: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main
+
+What would you like to do?
+[1] Create Maze
+[2] Upload Maze
+[3] Solve Maze
+[4] View Maze
+[5] Save Maze
+[6] Save Image
+[7] Delete Maze, Solution, or Image
+[8] Leave A-MAZE-ING
+Choose by number: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create Maze
+
+Choose a Width(3-50 squares)
+Choose by number: 3
+Choose a Height(3-50 squares)
+Choose by number: 3
+Choose a Algorithm
+[1] Aldous-Broder Algorithm.
+[2] Binary Tree Algorithm.
+[3] Cellular Automaton Algorithm.
+[4] Dungeon-Room Algorithm.
+[5] Eller's Algorithm.
+[6] Growing Tree Algorithm.
+[7] Hunt-and-Kill Algorithm.
+[8] Kruskal's Algorithm.
+[9] Prim's Algorithm.
+[10] Recursive Backtracking Algorithm.
+[11] Recursive Division Algorithm.
+[12] Sidewinder Algorithm.
+[13] Wilson's Algorithm.
+Choose by number: 10
+Successfully created new maze!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main
+[√] maze
+
+What would you like to do?
+[1] Create Maze
+[2] Upload Maze
+[3] Solve Maze
+[4] View Maze
+[5] Save Maze
+[6] Save Image
+[7] Delete Maze, Solution, or Image
+[8] Leave A-MAZE-ING
+Choose by number: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solve Maze
+[√] maze
+
+Solution successfully created
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main
+[√] maze
+[√] solution
+
+What would you like to do?
+[1] Create Maze
+[2] Upload Maze
+[3] Solve Maze
+[4] View Maze
+[5] Save Maze
+[6] Save Image
+[7] Delete Maze, Solution, or Image
+[8] Leave A-MAZE-ING
+Choose by number: 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Delete
+[√] maze
+[√] solution
+
+Type the number for each you would like to delete.
+[1] Maze
+[2] Solution
+[3] Cancel
+Choose by numbers: 12
+Successfully deleted...maze,solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main
+
+What would you like to do?
+[1] Create Maze
+[2] Upload Maze
+[3] Solve Maze
+[4] View Maze
+[5] Save Maze
+[6] Save Image
+[7] Delete Maze, Solution, or Image
+[8] Leave A-MAZE-ING
+Choose by number: 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quitting
+
+Are you sure?
+[1] Last chance to return to main
+[2] Ready to leave
+Choose by number: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The application is closing now.
+Thank you for playing, building, and solving, mazes with us!
+See you soon. :)
